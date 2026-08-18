@@ -19,7 +19,7 @@ OBS3: para cada vez que executar esse código, faça:
 import os
 
 def renomear_questoes_simples():
-    pasta = "6a72" # ATUALIZAR com o nome da pasta das questões que você vai arrumar 
+    pasta = "Ingles" # ATUALIZAR com o nome da pasta das questões que você vai arrumar 
     
     if not os.path.exists(pasta):
         print(f"Pasta {pasta} não encontrada!")
@@ -29,11 +29,11 @@ def renomear_questoes_simples():
     mapeamento = {}
         
     # Exemplo: parte_00x a parte_00y -> questao-x a questao-y
-    for i in range(12, 78+1):    # atualize seu for com o número da primeira imagem "parte_AlgumaCoisa.png" até o número da última imagem "parte_AlgumaCoisa.png" mais 1 da pasta
+    for i in range(2, 6+1):    # atualize seu for com o número da primeira imagem "parte_AlgumaCoisa.png" até o número da última imagem "parte_AlgumaCoisa.png" mais 1 da pasta
         antigo = f"parte_{i:03d}.png"
-        #novo = f"questao-{i+78}-espanhol.png"  # faça uma conta: se a primeira pagina for 
-        #novo = f"questao-{i+78}-ingles.png"
-        novo = f"questao-{i-6}.png" # faça uma conta: se o i do teu for está em 2, e precisa virar questão 35, como você transforma 2 em 35? faça a conta e coloque dentro da concatenação
+        #novo = f"questao-{i-6}-espanhol.png"  # faça uma conta: se a primeira pagina for 
+        novo = f"questao-{i-1}-ingles.png"
+        #novo = f"questao-{i-3}.png" # faça uma conta: se o i do teu for está em 2, e precisa virar questão 35, como você transforma 2 em 35? faça a conta e coloque dentro da concatenação
         
         mapeamento[antigo] = novo
     
